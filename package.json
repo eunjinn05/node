@@ -1,8 +1,9 @@
 {
   "scripts": {
     "server": "nodemon ./main.js",
-    "myplaylist" : "nodemon ./myplaylist.js",
-    "refactoring1": "nodemon ./refactoring_main.js"
+    "myplaylist": "nodemon ./myplaylist.js",
+    "refactoring1": "nodemon ./refactoring_main.js",
+    "refactoring2": "nodemon ./refactoring_myplaylist.js"
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
