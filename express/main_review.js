@@ -4,6 +4,13 @@ const app = express();
 // req.body json으로 읽게함
 app.use(express.json());
 
+// css 위치 읽게함 ('/public' prefix 사용)
+app.use('/public', express.static('express/views'));
+// view 위치 읽게함
+app.set('views', 'express/views');
+// view engine 선언
+app.set('view engine', 'pug');
+
 const musicRouter = express.Router();
 app.use('/music', musicRouter);
 
@@ -44,6 +51,13 @@ musicRouter.post('/delete', (req, res) => {
     playList = playList.filter((arr) => arr.idx != req.body.idx);
     console.log(playList);
     res.send('Delete Song');
+});
+
+// png render
+app.get('/', (req, res) => {
+    res.render('index', {
+        message: 'hello, pug',
+    });
 });
 
 const PORT = 5002;
