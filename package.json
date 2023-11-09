@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "server": "nodemon ./express/main.js",
+    "server": "nodemon ./review2/main.js",
     "servers": "nodemon ./express/main_review.js",
     "pug": "nodemon ./express/pug_main.js",
     "member": "nodemon ./review/main.js",
