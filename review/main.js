@@ -13,14 +13,9 @@ app.use((err, req, res, next) => {
 //==================================Pug rendering ===========================================
 
 app.set('view engine', 'pug');
-app.use('/public', express.static('express/views'));
-app.set('views', 'express/member');
-
-app.get('/get', (req, res) => {
-    res.render('index', {
-        message: 'hello',
-    });
-});
+app.use('/public', express.static('review/src'));
+app.use('/uploads', express.static('uploads'));
+app.set('views', 'review/member');
 
 //==================================Pug rendering ===========================================
 
