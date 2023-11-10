@@ -3,6 +3,7 @@
         "editor.formatOnSave" : true,
         "editor.defaultFormatter" : "esbenp.prettier-vscode",
         "editor.tabSize": 4
-    }
+    },
+    "tailwindCSS.emmetCompletions": true
 
 }
