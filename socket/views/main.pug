@@ -1,6 +1,12 @@
 html
     head 
-        link(href="https://cdn.tailwindcss.com/3.3.5" rel="stylesheet")
-        link(href="../src/tailwind.css" rel="stylesheet")
+        link(href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet")
+        //- link(href="https://cdn.tailwindcss.com" rel="stylesheet")
     body
-        div.mx-5.bg-gray-100 hello, pug
+        h1.bg-gradient-to-r.bg.from-purple-100.to-gray-200.p-16.text-4xl.font-bold 나의 채팅 서비스
+        div.p-16.space-y-8
+            div.bg-gray-100.p-2 채팅목록
+            form.space-x-4.flex
+                input.flex-1.border.boarder-gray-300.p-4(placeholder='채팅을 입력해보세요')
+                button.bg-blue-600.text-white.p-4 보내기
+        script(src="src/client.js")
